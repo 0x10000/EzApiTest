@@ -48,12 +48,13 @@ class Log {
       final message = '$start[${record.time}][${record.level.name}]'
           '\n------------------------------------'
           '\n${record.message}$end';
-      developer.log(
-        message,
-        name: record.loggerName,
-        level: record.level.value,
-        time: record.time,
-      );
+      // developer.log(
+      //   message,
+      //   name: record.loggerName,
+      //   level: record.level.value,
+      //   time: record.time,
+      // );
+      print(message);
 
       //写入本地日志文件
       final log = '\n[${record.time}][${record.level.name}]'

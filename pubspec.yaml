@@ -12,6 +12,9 @@ dependencies:
   dio_smart_retry: ^6.0.0
   curl_logger_dio_interceptor: ^1.0.0
   logging: ^1.2.0
+  http_multi_server: ^3.2.1
+  shelf: ^1.4.1
+  mime: ^1.0.4
 
 dependency_overrides:
 

@@ -1,6 +1,18 @@
 import 'dart:io';
 
 class FileUtils {
+  ///读取文件内容
+  static Future readBytes(String filePath) async {
+    final file = File(filePath);
+    return await file.readAsBytes();
+  }
+
+  ///读取文件内容
+  static Future<String> readString(String filePath) async {
+    final file = File(filePath);
+    return await file.readAsString();
+  }
+
   ///判断文件是否存在
   static Future<bool> fileExists(String filePath) async {
     final file = File(filePath);
