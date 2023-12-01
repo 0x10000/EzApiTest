@@ -1,0 +1,18 @@
+name: ez_api_test
+description: A simple and easy-to-use API automation testing tool.
+
+
+version: 1.0.0
+
+environment:
+  sdk: ">=2.17.1 <3.0.0"
+
+dependencies:
+  dio: ^5.3.3
+  dio_smart_retry: ^6.0.0
+  curl_logger_dio_interceptor: ^1.0.0
+  logging: ^1.2.0
+
+dependency_overrides:
+
+dev_dependencies:
